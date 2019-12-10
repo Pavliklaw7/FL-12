@@ -230,6 +230,7 @@ section:before,
 .heading .padding-medium {
     padding: 0 !important;
     max-width: 100% !important;
+    text-align: center;
 }
 
 .tm-section-description,
@@ -246,23 +247,18 @@ section:before,
 }
 
 .heading .padding-medium ol {
-    display: grid;
+    list-style: none;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 0 0 150px !important;
-    padding: 0 !important;
+    width: 550px !important;
 }
 
-.heading .padding-medium ol li:first-child{
-    grid-column-start: 2;
+.heading .padding-medium ol li:nth-child(2n + 1) {
+    text-align: left !important;
 }
 
 
-.heading .padding-medium ol li {
-    padding: 10px;
-    list-style: none ;
-    font-size: 20px;
-    justify-content: space-around;
+.heading .padding-medium ol li:nth-child (2n + 1) {
+    text-align: right !important;
 }
 
 .heading .padding-medium ol li a {
